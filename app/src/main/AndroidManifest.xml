@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aplikacjaitp.robert.aplikacjaitp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/logocircle"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity"
+            android:label="@string/title_activity_saved_company_list"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.CompanyDetailActivity"
+            android:label="@string/title_activity_company_detail"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity" />
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.OrganizersActivity"
+            android:label="@string/title_activity_organizers"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity" />
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.CompanyListSearchedActivity"
+            android:label="@string/title_activity_searched_company_list"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.CompanyListActivity" />
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.WorkshopActivity"
+            android:label="@string/title_activity_workshop"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.SponsorActivity"
+            android:label="@string/title_activity_sponsor"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.aplikacjaitp.robert.aplikacjaitp.CompanyDetailSearchedActivity"
+            android:label="@string/title_activity_company_searched_detail"
+            android:parentActivityName="com.aplikacjaitp.robert.aplikacjaitp.CompanyListSearchedActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aplikacjaitp.robert.aplikacjaitp.CompanyListSearchedActivity" />
+        </activity>
+    </application>
+
+</manifest>

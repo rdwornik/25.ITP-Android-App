@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="64dp">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data"
+        android:gravity="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_large"
+        android:fontFamily="@font/open_sans_bold"/>
+
+    <TextView
+        android:id="@+id/placae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place"
+        android:gravity="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_medium"
+        android:fontFamily="@font/open_sans_regular"/>
+
+    <Button
+        android:id="@+id/button_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:baselineAligned="false"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/menu_button_catalog"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_medium" />
+
+    <Button
+        android:id="@+id/button_workshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/menu_button_workshop"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_medium" />
+
+    <Button
+        android:id="@+id/button_sponsors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/menu_button_sponsors"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_medium" />
+
+    <Button
+        android:id="@+id/button_organizers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/menu_button_organizers"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/font_size_medium" />
+
+</LinearLayout>
+
+

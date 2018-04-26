@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aplikacjaitp.robert.aplikacjaitp.WorkshopActivity"
+    tools:showIn="@layout/activity_workshops">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/button_workshop_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/workshop_button_signIn"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_size_medium"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/open_sans_bold"/>
+
+            <TextView
+                android:id="@+id/workshop_day1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/border_new"
+                android:gravity="center"
+                tools:text="day1"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="@dimen/font_size_medium"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/workshop_rv_day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <TextView
+                android:id="@+id/workshop_day2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/border_new"
+                android:gravity="center"
+                tools:text="day2"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_size_medium"
+                android:fontFamily="@font/open_sans_bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/workshop_rv_day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

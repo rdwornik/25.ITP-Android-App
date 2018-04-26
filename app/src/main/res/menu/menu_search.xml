@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/menuSearchedKierunki"
+        android:title="Kierunki"
+        android:showAsAction="ifRoom">
+
+        <menu>
+    <group
+        android:id="@+id/search_kierunki"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/search_wszystkie"
+            android:orderInCategory="100"
+            android:title="@string/wszystkie" />
+        <item
+            android:id="@+id/search_kierunek1"
+            android:orderInCategory="101"
+            android:title="@string/administracja" />
+        <item
+            android:id="@+id/search_kierunek2"
+            android:orderInCategory="101"
+            android:title="@string/architektura" />
+
+        <item
+            android:id="@+id/search_kierunek3"
+            android:orderInCategory="101"
+            android:title="@string/automatyka_i_robotyka" />
+        <item
+            android:id="@+id/search_kierunek4"
+            android:orderInCategory="101"
+            android:title="@string/biotechnologia" />
+        <item
+            android:id="@+id/search_kierunek5"
+            android:orderInCategory="101"
+            android:title="@string/budownictowo" />
+        <item
+            android:id="@+id/search_kierunek6"
+            android:orderInCategory="101"
+            android:title="@string/ekonomia" />
+        <item
+            android:id="@+id/search_kierunek7"
+            android:orderInCategory="101"
+            android:title="@string/elektronika" />
+        <item
+            android:id="@+id/search_kierunek8"
+            android:orderInCategory="101"
+            android:title="@string/elektrotechnika" />
+        <item
+            android:id="@+id/search_kierunek9"
+            android:orderInCategory="101"
+            android:title="@string/energetyka" />
+        <item
+            android:id="@+id/search_kierunek10"
+            android:orderInCategory="101"
+            android:title="@string/fizyka_techniczna" />
+        <item
+            android:id="@+id/search_kierunek11"
+            android:orderInCategory="101"
+            android:title="@string/fotonika" />
+        <item
+            android:id="@+id/search_kierunek12"
+            android:orderInCategory="101"
+            android:title="@string/geodezja_i_kartografia" />
+        <item
+            android:id="@+id/search_kierunek13"
+            android:orderInCategory="101"
+            android:title="@string/geoinformatyka" />
+        <item
+            android:id="@+id/search_kierunek14"
+            android:orderInCategory="101"
+            android:title="@string/gospodarka_przestrzenna" />
+        <item
+            android:id="@+id/search_kierunek15"
+            android:orderInCategory="101"
+            android:title="@string/informatyka" />
+        <item
+            android:id="@+id/search_kierunek16"
+            android:orderInCategory="101"
+            android:title="@string/in_ynieria_biomedyczna" />
+        <item
+            android:id="@+id/search_kierunek17"
+            android:orderInCategory="101"
+            android:title="@string/iny_nieria_chemiczna_i_procesowa" />
+        <item
+            android:id="@+id/search_kierunek18"
+            android:orderInCategory="101"
+            android:title="@string/in_ynieria_materia_owa" />
+        <item
+            android:id="@+id/search_kierunek19"
+            android:orderInCategory="101"
+            android:title="@string/in_ynieria_pojazd_w_elektrycznych_i_hybrydowych" />
+        <item
+            android:id="@+id/search_kierunek20"
+            android:orderInCategory="101"
+            android:title="@string/in_ynieria_rodowiska" />
+        <item
+            android:id="@+id/search_kierunek21"
+            android:orderInCategory="101"
+            android:title="@string/lotnictwo_i_kosmonautyka" />
+        <item
+            android:id="@+id/search_kierunek22"
+            android:orderInCategory="101"
+            android:title="@string/matematyka" />
+        <item
+            android:id="@+id/search_kierunek23"
+            android:orderInCategory="101"
+            android:title="@string/mechanika_i_budowa_maszyn" />
+        <item
+            android:id="@+id/search_kierunek24"
+            android:orderInCategory="101"
+            android:title="@string/mechatronika" />
+        <item
+            android:id="@+id/search_kierunek25"
+            android:orderInCategory="101"
+            android:title="@string/ochrona_rodowiska" />
+        <item
+            android:id="@+id/search_kierunek26"
+            android:orderInCategory="101"
+            android:title="@string/papiernictwo_i_politgrafia" />
+        <item
+            android:id="@+id/search_kierunek27"
+            android:orderInCategory="101"
+            android:title="@string/technologia_chemiczna" />
+        <item
+            android:id="@+id/search_kierunek28"
+            android:orderInCategory="101"
+            android:title="@string/telekomunikacja" />
+        <item
+            android:id="@+id/search_kierunek29"
+            android:orderInCategory="101"
+            android:title="@string/transport" />
+        <item
+            android:id="@+id/search_kierunek30"
+            android:orderInCategory="101"
+            android:title="@string/zarz_dzanie" />
+        <item
+            android:id="@+id/search_kierunek31"
+            android:orderInCategory="101"
+            android:title="@string/zarz_danie_i_inzynieria_produkcji" />
+
+    </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/menuSearchedDay"
+        android:title="Dzień"
+        android:showAsAction="ifRoom">
+        <menu>
+    <group
+        android:id="@+id/search_day"
+        android:checkableBehavior="all"
+        android:enabled="true"
+        android:orderInCategory="105"
+        android:visible="true">
+        <item
+            android:id="@+id/search_wtorek"
+            android:title="@string/dzien_1" />
+        <item
+            android:id="@+id/search_sroda"
+            android:title="@string/dzien_2" />
+    </group>
+        </menu>
+    </item>
+</menu>
